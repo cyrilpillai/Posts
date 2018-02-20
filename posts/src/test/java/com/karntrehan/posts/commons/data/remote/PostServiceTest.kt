@@ -50,6 +50,7 @@ class PostServiceTest {
                     assertValueCount(1)
                     Assert.assertEquals(values()[0].size, 10)
                     //Testing BitRise
+                    //Dummy changes to test automatic trigger of BitRise builds
                     Assert.assertEquals(values()[0][0].userName, "Leanne Graha")
                     Assert.assertEquals(values()[0][0].id, 1)
                 }
