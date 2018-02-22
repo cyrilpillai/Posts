@@ -26,6 +26,7 @@ class PostServiceTest {
         postService = DependencyProvider
                 .getRetrofit(mockWebServer.url("/"))
                 .create(PostService::class.java)
+        //Testing BitRise triggering with tags
 
     }
 
