@@ -26,8 +26,6 @@ class PostServiceTest {
         postService = DependencyProvider
                 .getRetrofit(mockWebServer.url("/"))
                 .create(PostService::class.java)
-        //Testing BitRise triggering with tags
-
     }
 
     @After
@@ -50,7 +48,8 @@ class PostServiceTest {
                     assertNoErrors()
                     assertValueCount(1)
                     Assert.assertEquals(values()[0].size, 10)
-                    Assert.assertEquals(values()[0][0].userName, "Leanne Graham")
+                    //Deliberately producing an assertion failure
+                    Assert.assertEquals(values()[0][0].userName, "Leanne Graha")
                     Assert.assertEquals(values()[0][0].id, 1)
                 }
     }
