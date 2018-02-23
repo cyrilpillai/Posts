@@ -49,7 +49,7 @@ class PostServiceTest {
                     assertValueCount(1)
                     Assert.assertEquals(values()[0].size, 10)
                     //Deliberately producing an assertion failure
-                    Assert.assertEquals(values()[0][0].userName, "Leanne Graha")
+                    Assert.assertEquals(values()[0][0].userName, "Leanne Graham")
                     Assert.assertEquals(values()[0][0].id, 1)
                 }
     }
