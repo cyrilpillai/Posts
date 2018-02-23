@@ -26,7 +26,6 @@ class PostServiceTest {
         postService = DependencyProvider
                 .getRetrofit(mockWebServer.url("/"))
                 .create(PostService::class.java)
-
     }
 
     @After
@@ -49,6 +48,7 @@ class PostServiceTest {
                     assertNoErrors()
                     assertValueCount(1)
                     Assert.assertEquals(values()[0].size, 10)
+                    //Deliberately producing an assertion failure
                     Assert.assertEquals(values()[0][0].userName, "Leanne Graham")
                     Assert.assertEquals(values()[0][0].id, 1)
                 }
